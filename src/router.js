@@ -28,7 +28,7 @@ const routes = [
 	},
 ];
 const router = createHashRouter(routes, {
-	basename: "/",
+	basename: "/go-kart/",
 });
 
 export default router;
