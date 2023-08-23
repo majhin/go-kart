@@ -1,4 +1,4 @@
-import { createHashRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import ProductList from "./components/ProductList";
 import Cart from "./components/Cart";
@@ -27,8 +27,8 @@ const routes = [
 		element: <ProductDetail />,
 	},
 ];
-const router = createHashRouter(routes, {
-	basename: "/go-kart",
+const router = createBrowserRouter(routes, {
+	basename: "/",
 });
 
 export default router;

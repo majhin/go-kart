@@ -27,9 +27,9 @@ const Cart = () => {
 						>
 							X
 						</button>
-						<h6 className='d-inline-block '>
+						<strong className='d-inline-block '>
 							&nbsp; &nbsp; &nbsp; {item.name} - Rs.{item.price}
-						</h6>
+						</strong>
 					</p>
 				</div>
 			))}

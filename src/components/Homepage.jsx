@@ -16,7 +16,7 @@ function Homepage() {
 			</p>
 			<p className='lead'>So what are you waiting for? Get shopping!</p>
 			<div className='my-4'>
-				<Link to={`/go-kart/products`} className='btn btn-warning btn-lg'>
+				<Link to={`/products`} className='btn btn-warning btn-lg'>
 					Shop Now
 				</Link>
 			</div>

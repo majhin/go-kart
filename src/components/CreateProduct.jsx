@@ -70,7 +70,7 @@ function CreateProduct() {
 						onChange={handleInputChange}
 						placeholder='Product Name'
 					/>
-					<label for='floatingName'>Product Name</label>
+					<label htmlFor='floatingName'>Product Name</label>
 				</div>
 				<div className='form-floating mb-3'>
 					<textarea
@@ -81,7 +81,7 @@ function CreateProduct() {
 						onChange={handleInputChange}
 						placeholder='Product Description'
 					/>
-					<label for='floatingDescription'>Product Description</label>
+					<label htmlFor='floatingDescription'>Product Description</label>
 				</div>
 				<div className='form-floating mb-3'>
 					<input
@@ -93,7 +93,7 @@ function CreateProduct() {
 						placeholder='Product Price'
 						min={0}
 					/>
-					<label for='floatingDescription'>Product Price</label>
+					<label htmlFor='floatingDescription'>Product Price</label>
 				</div>
 				<div className='form-floating mb-3'>
 					<input
@@ -105,7 +105,7 @@ function CreateProduct() {
 						onChange={handleInputChange}
 						placeholder='Image URL'
 					/>
-					<label for='floatingImage'>Product Image URL</label>
+					<label htmlFor='floatingImage'>Product Image URL</label>
 				</div>
 				<button type='submit' className='btn btn-success '>
 					Add Product
