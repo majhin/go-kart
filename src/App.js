@@ -13,8 +13,8 @@ const App = () => {
 	return (
 		<>
 			<Alert />
-			<CustomNavbar />
 			<HashRouter basename='/'>
+				<CustomNavbar />
 				<Routes>
 					<Route path='/' Component={Homepage} />
 					<Route path='/products' Component={ProductList} />

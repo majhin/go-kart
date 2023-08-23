@@ -1,20 +1,12 @@
 import { Navbar, Nav } from "react-bootstrap"; // Import Bootstrap components
 import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
 import "../css/Navbar.css";
 
 function CustomNavbar() {
 	const cartItems = useSelector((state) => state.cart);
-	const navigate = useNavigate();
-
-	const handleHome = (e) => {
-		e.preventDefault();
-		navigate("/");
-	};
-
 	return (
 		<Navbar className='custom-navbar' expand='lg'>
-			<Navbar.Brand className='ms-5 ' onClick={(e) => handleHome(e)}>
+			<Navbar.Brand href='/' className='ms-5 '>
 				Go-kart
 			</Navbar.Brand>
 			<Navbar.Toggle aria-controls='basic-navbar-nav' />
