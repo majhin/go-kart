@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/go-kart/static/css/main.7b262a09.css",
-    "main.js": "/go-kart/static/js/main.544db748.js",
+    "main.js": "/go-kart/static/js/main.c3460601.js",
     "index.html": "/go-kart/index.html",
     "main.7b262a09.css.map": "/go-kart/static/css/main.7b262a09.css.map",
-    "main.544db748.js.map": "/go-kart/static/js/main.544db748.js.map"
+    "main.c3460601.js.map": "/go-kart/static/js/main.c3460601.js.map"
   },
   "entrypoints": [
     "static/css/main.7b262a09.css",
-    "static/js/main.544db748.js"
+    "static/js/main.c3460601.js"
   ]
 }
