@@ -1,6 +1,7 @@
 import { Navbar, Nav } from "react-bootstrap"; // Import Bootstrap components
 import { useSelector } from "react-redux";
 import "../css/Navbar.css";
+import { Link } from "react-router-dom";
 
 function CustomNavbar() {
 	const cartItems = useSelector((state) => state.cart);
