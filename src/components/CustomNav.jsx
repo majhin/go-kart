@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap"; // Import Bootstrap components
 import { useSelector } from "react-redux";
 import "../css/Navbar.css";
@@ -6,27 +7,27 @@ function CustomNavbar() {
 	const cartItems = useSelector((state) => state.cart);
 	return (
 		<Navbar className='custom-navbar' expand='lg'>
-			<Navbar.Brand href='/' className='ms-5 '>
+			<Link to={"/"} className='ms-5 '>
 				Go-kart
-			</Navbar.Brand>
+			</Link>
 			<Navbar.Toggle aria-controls='basic-navbar-nav' />
 			<Navbar.Collapse id='basic-navbar-nav'>
 				<Nav className='ml-auto'>
-					<Nav.Link href='/'>Home</Nav.Link>
-					<Nav.Link href='/products'>Products</Nav.Link>
+					<Link to='/'>Home</Link>
+					<Link to='/products'>Products</Link>
 				</Nav>
 				<Nav className='ml-auto'>
-					<Nav.Link href='/create'>Add Product</Nav.Link>
+					<Link to={"/create"}>Add Product</Link>
 				</Nav>
 				<Nav>
-					<Nav.Link href='/cart' className='position-relative'>
+					<Link to={"/cart"} className='position-relative'>
 						<button type='button' className='btn btn-warning position-relative'>
 							Cart
 							<span className='position-absolute top-25 start-100 translate-middle badge rounded-pill bg-danger'>
 								{cartItems.length}
 							</span>
 						</button>
-					</Nav.Link>
+					</Link>
 				</Nav>
 			</Navbar.Collapse>
 		</Navbar>
