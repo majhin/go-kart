@@ -1,0 +1,20 @@
+.custom-navbar {
+    background-color: #2f2f2f; 
+  }
+  
+  .custom-navbar .navbar-brand {
+    color: #ff3c00; 
+  }
+  
+  .custom-navbar .navbar-nav .nav-link {
+    color: #ffffff; 
+  }
+  
+  .custom-navbar .navbar-toggler-icon {
+    background-color: #ffffff; 
+  }
+
+  .custom-navbar .navbar-collapse {
+    justify-content: space-around;
+  }
+  

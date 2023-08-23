@@ -1,0 +1,256 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Tickle Me Socks",
+      "description": "These socks are so soft, they'll make your feet giggle with joy. Warning: Excessive wiggling may occur.",
+      "price": 12,
+      "image": "https://www.hiddencomments.com/cdn/shop/articles/IMG_7979_2867x.jpg?v=1590853874",
+      "specifications": {
+        "material": "Cotton",
+        "size": "One size fits all",
+        "color": "Various colors"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Infinite Coffee Mug",
+      "description": "Introducing the mug that never runs out of coffee! Just kidding, it's a regular mug, but it does hold your dreams and aspirations.",
+      "price": 15,
+      "image": "https://static.wixstatic.com/media/0a1739_b1d3b7ea8a8040ed9d6c47d3e05aa309~mv2.jpg/v1/fill/w_520,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/0a1739_b1d3b7ea8a8040ed9d6c47d3e05aa309~mv2.jpg",
+      "specifications": {
+        "capacity": "12 oz",
+        "material": "Ceramic",
+        "design": "Printed graphics"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Unicorn Duct Tape",
+      "description": "Fixing things has never been this magical. Our duct tape is approved by mythical creatures everywhere.",
+      "price": 8,
+      "image": "https://m.media-amazon.com/images/I/91yi3gc1c8L._AC_UF1000,1000_QL80_.jpg",
+      "specifications": {
+        "length": "10 yards",
+        "width": "2 inches",
+        "pattern": "Unicorn and rainbow"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Marshmallow Shooter",
+      "description": "Turn marshmallow warfare into a fluffy and sugary adventure. Bonus points if you catch them in your mouth!",
+      "price": 20,
+      "image": "https://images.vat19.com/marshmallow-double-shooter/marshmallow-shooter-ammo-2.jpg",
+      "specifications": {
+        "material": "Plastic",
+        "range": "Up to 20 feet",
+        "includes": "Marshmallow ammo"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Gravity-Defying Hat",
+      "description": "This hat has mastered the art of levitation. Now you can truly stand out in a crowd (or float above it).",
+      "price": 30,
+      "image": "https://im.rediff.com/getahead/2019/jun/20fashion-3.jpg?w=670&h=900",
+      "specifications": {
+        "material": "Synthetic fibers",
+        "size": "One size fits all",
+        "color": "Black"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Squeaky Clean Soap",
+      "description": "Get ready to scrub-a-dub-dub with our soap that makes bath time sound like a rubber ducky orchestra.",
+      "price": 5,
+      "image": "https://images.meesho.com/images/products/69782194/puuam_512.webp",
+      "specifications": {
+        "scent": "Fresh cotton",
+        "shape": "Rectangular",
+        "quantity": "Set of 3"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Plant Whisperer Megaphone",
+      "description": "Finally, a megaphone that communicates with plants. Give your foliage friends the motivational speeches they deserve.",
+      "price": 18,
+      "image": "https://i0.wp.com/bldgblog.com/wp-content/uploads/2015/12/r1R_1phUN7nj-FlWcH-qmOAJ5zLtYJp89pkgcKBJAu4.jpeg?fit=1200%2C801&ssl=1",
+      "specifications": {
+        "material": "Plastic",
+        "power_source": "2 AAA batteries",
+        "range": "Up to 5 meters"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Fuzzy Logic Pillow",
+      "description": "This pillow has a degree in fuzzy logic. It's always there to provide a soft landing for your most perplexing thoughts.",
+      "price": 25,
+      "image": "https://ih1.redbubble.net/image.1194748543.5182/throwpillow,small,600x-bg,f8f8f8-c,0,120,600,600.u3.jpg",
+      "specifications": {
+        "filling": "Polyester fiber",
+        "size": "18x18 inches",
+        "color": "Gray"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Jet-Propelled Sneakers",
+      "description": "Run faster than your imagination with these sneakers. Warning: May accidentally launch you into the future.",
+      "price": 50,
+      "image": "https://i.ytimg.com/vi/-BfFyKRTJ5c/maxresdefault.jpg",
+      "specifications": {
+        "material": "Synthetic leather",
+        "sizes_available": "US 6-12",
+        "color": "Black"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Disco Ball Waffle Maker",
+      "description": "Breakfast just got groovy. Make waffles that spin and shine, bringing the dance floor to your dining table.",
+      "price": 40,
+      "image": "https://cdn.media.amplience.net/s/hottopic/16906522_hi",
+      "specifications": {
+        "material": "Stainless steel",
+        "waffle_shape": "Round",
+        "dimensions": "10x10 inches"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Zombie Repellent Spray",
+      "description": "Keep zombies at bay with our scientifically unproven spray. Works on humans too, just in case.",
+      "price": 15,
+      "image": "https://ourpeacefulplanet.com/wp-content/uploads/2016/10/Monster-Ghost-and-Zombie-Survial-Sprays-12-1.png",
+      "specifications": {
+        "volume": "100 ml",
+        "scent": "Citrus",
+        "application": "Spray bottle"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Rainbow Pencil Set",
+      "description": "Write in every color of the rainbow with our enchanted pencil set. Warning: May cause sudden bursts of creativity.",
+      "price": 10,
+      "image": "https://www.themadraskadai.in/wp-content/uploads/2022/05/rainbow-pencil-set-the-madras-kadai.jpg",
+      "specifications": {
+        "pencil_count": "12 pencils",
+        "lead_type": "HB",
+        "colors_included": "Red, orange, yellow, green, blue, purple"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Chocolate-Coated Broccoli",
+      "description": "Healthy meets indulgent in this bizarre fusion. It's like a carnival for your taste buds... with nutrients.",
+      "price": 7,
+      "image": "https://www.sheknows.com/wp-content/uploads/2018/08/chocolate-broccoli-cookie-recipe-final_qyy4b2.jpeg",
+      "specifications": {
+        "quantity": "Box of 10",
+        "chocolate_type": "Dark chocolate",
+        "broccoli_size": "Small florets"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Silent Alarm Clock",
+      "description": "Wake up without waking up everyone else. Our alarm clock uses silent disco technology to get you moving.",
+      "price": 28,
+      "image": "https://supplyleader.com/preview_files/387937.jpg",
+      "specifications": {
+        "display_type": "LED",
+        "power_source": "Rechargeable battery",
+        "features": "Vibrating alarm"
+      }
+    },
+    {
+      "id": 15,
+      "name": "Sunglasses for Pets",
+      "description": "Because even your pet deserves to be the coolest one on the block. Watch them strut their stuff in style.",
+      "price": 12,
+      "image": "https://m.media-amazon.com/images/I/61h-cGuOdVL.jpg",
+      "specifications": {
+        "size": "Small to medium pets",
+        "frame_color": "Assorted colors",
+        "UV_protection": "Category 3"
+      }
+    },
+    {
+      "id": 16,
+      "name": "Remote-Controlled Snack Tray",
+      "description": "Too comfy to get up for snacks? No problem! Navigate your snacks to you with this remote-controlled tray.",
+      "price": 22,
+      "image": "https://ksr-ugc.imgix.net/assets/031/693/841/01f9bbd23ab267aeb2672be5d22c44c9_original.png?ixlib=rb-4.1.0&crop=faces&w=1552&h=873&fit=crop&v=1607514344&auto=format&frame=1&q=92&s=8d3674ed0e2b54f059a32d231910f4f8",
+      "specifications": {
+        "material": "Plastic",
+        "dimensions": "12x8 inches",
+        "control_distance": "Up to 15 meters"
+      }
+    },
+    {
+      "id": 17,
+      "name": "Fluffy Unicorn Slippers",
+      "description": "Step into a world of pure imagination with these slippers. Warning: May induce spontaneous unicorn sightings.",
+      "price": 18,
+      "image": "https://rukminim1.flixcart.com/image/300/300/kuef2q80/shoe/m/q/6/6-unicorn-slipper-komto-pink-original-imag7j2grdn5ybwx.jpeg",
+      "specifications": {
+        "size": "Medium",
+        "color": "Pink",
+        "material": "Faux fur"
+      }
+    },
+    {
+      "id": 18,
+      "name": "Electric S'mores Maker",
+      "description": "Who needs a campfire when you have an electric s'mores maker? It's like a mini bonfire on your countertop.",
+      "price": 35,
+      "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-720w,f_auto,q_auto:best/newscms/2023_18/1818075/screen_shot_2021-12-09_at_9-28-45_am.png",
+      "specifications": {
+        "power_source": "Electric plug",
+        "dimensions": "8x8 inches",
+        "material": "Stainless steel"
+      }
+    },
+    {
+      "id": 19,
+      "name": "Hovering Pet Rock",
+      "description": "The classic pet rock just got an upgrade. It hovers, it rocks, and it might just become your new best friend.",
+      "price": 9,
+      "image": "https://nationaltoday.com/wp-content/uploads/2021/08/National-Pet-Rock-Day.jpg",
+      "specifications": {
+        "hover_height": "1-2 inches",
+        "color": "Gray",
+        "material": "Stone"
+      }
+    },
+    {
+      "id": 20,
+      "name": "Dinosaur-Shaped Pasta",
+      "description": "Make your meals prehistoric with our dino-shaped pasta. Warning: May cause sudden cravings for Jurassic Park marathons.",
+      "price": 6,
+      "image": "https://images-cdn.ubuy.co.in/635f9ae7dc844b7072489983-pastabilities-organic-kids-pasta-fun.jpg",
+      "specifications": {
+        "pasta_type": "Durum wheat semolina",
+        "shapes_included": "T-Rex, triceratops, stegosaurus",
+        "weight": "250g"
+      }
+    },
+    {
+      "id": 21,
+      "name": "iPhone",
+      "description": "Apple's latest iPhone 69, it has a nice screen, nice camera, nice design, and a nice charging hole Mmmmm",
+      "price": 6969,
+      "image": "https://m.media-amazon.com/images/I/71dhParQlKL.jpg",
+      "specifications": {
+        "screen_size": "6.7 inches",
+        "camera_resolution": "20 MP",
+        "storage_capacity": "256 GB"
+      }
+    }
+  ]
+}

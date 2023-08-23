@@ -1,0 +1,10 @@
+.custom-toast-container {
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	z-index: 1000;
+}
+
+.bg {
+	background-color: rgb(255, 255, 255);
+}
