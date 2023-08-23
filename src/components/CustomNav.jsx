@@ -1,33 +1,40 @@
-import { Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap"; // Import Bootstrap components
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import "../css/Navbar.css";
 
 function CustomNavbar() {
 	const cartItems = useSelector((state) => state.cart);
+	const navigate = useNavigate();
+
+	const handleHome = (e) => {
+		e.preventDefault();
+		navigate("/");
+	};
+
 	return (
 		<Navbar className='custom-navbar' expand='lg'>
-			<Link to={"/"} className='ms-5 '>
+			<Navbar.Brand className='ms-5 ' onClick={(e) => handleHome(e)}>
 				Go-kart
-			</Link>
+			</Navbar.Brand>
 			<Navbar.Toggle aria-controls='basic-navbar-nav' />
 			<Navbar.Collapse id='basic-navbar-nav'>
 				<Nav className='ml-auto'>
-					<Link to='/'>Home</Link>
-					<Link to='/products'>Products</Link>
+					<Nav.Link href='/'>Home</Nav.Link>
+					<Nav.Link href='/products'>Products</Nav.Link>
 				</Nav>
 				<Nav className='ml-auto'>
-					<Link to={"/create"}>Add Product</Link>
+					<Nav.Link href='/create'>Add Product</Nav.Link>
 				</Nav>
 				<Nav>
-					<Link to={"/cart"} className='position-relative'>
+					<Nav.Link href='/cart' className='position-relative'>
 						<button type='button' className='btn btn-warning position-relative'>
 							Cart
 							<span className='position-absolute top-25 start-100 translate-middle badge rounded-pill bg-danger'>
 								{cartItems.length}
 							</span>
 						</button>
-					</Link>
+					</Nav.Link>
 				</Nav>
 			</Navbar.Collapse>
 		</Navbar>
