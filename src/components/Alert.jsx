@@ -1,9 +1,9 @@
-import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { ToastContainer, Toast } from "react-bootstrap";
 import { hideAlert } from "../reducers/alertReducer";
-import "../css/Alert.css";
+import "../css/Alert.css"; //Alert specific custom css
 
+//Using bootstrap toasts in conjunction with the react-redux
 function Alert() {
 	const alert = useSelector((state) => state.alert);
 	const dispatch = useDispatch();

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import { fetchProducts, toggleSortByPrice } from "../reducers/productReducer";
@@ -10,14 +10,17 @@ const ProductList = () => {
 	const products = useSelector((state) => state.products.data);
 	const sortByPrice = useSelector((state) => state.products.sortByPrice);
 
+	//decides based on sortByPrice to sort product list or not
 	const sortedProducts = sortByPrice
 		? [...products].sort((a, b) => a.price - b.price)
 		: products;
 
+	//handler to toggle the sort button and state
 	const handleSortToggle = () => {
 		dispatch(toggleSortByPrice());
 	};
 
+	//standart useEffect, re-runs if dispatch is called
 	useEffect(() => {
 		dispatch(fetchProducts());
 	}, [dispatch]);

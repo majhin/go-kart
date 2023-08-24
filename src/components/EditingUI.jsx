@@ -4,19 +4,22 @@ import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
 import { showAlert } from "../reducers/alertReducer";
-import { addToCart } from "../reducers/cartReducer";
+import { addToCart, removeFromCart } from "../reducers/cartReducer";
 import {
 	toggleEditing,
 	updateProduct,
 	deleteProduct,
 } from "../reducers/productReducer";
 
+//Conditionally renders each product card based on if inline editing TRUE/FALSE and shows corresponding alerts
 function EditingUI({ product }) {
 	const dispatch = useDispatch();
 	const [editedProduct, setEditedProduct] = useState({ ...product });
 
+	//handler to delete product, also deletes from the cart
 	const handleDelete = () => {
 		dispatch(deleteProduct(product.id));
+		dispatch(removeFromCart(product.id));
 		dispatch(
 			showAlert({
 				type: "Success",
@@ -25,15 +28,18 @@ function EditingUI({ product }) {
 		);
 	};
 
+	//handler to toggle editibility (is that a word!) of product card
 	const handleEditToggle = () => {
 		dispatch(toggleEditing(product.id));
 	};
 
+	//standard handler for input change
 	const handleInputChange = (e) => {
 		const { name, value } = e.target;
 		setEditedProduct({ ...editedProduct, [name]: value });
 	};
 
+	// handler for updating a product
 	const handleUpdateProduct = () => {
 		dispatch(updateProduct({ id: product.id, updatedProduct: editedProduct }));
 		dispatch(
@@ -44,6 +50,7 @@ function EditingUI({ product }) {
 		);
 	};
 
+	//handler to add product to cart - duplicates don't get added
 	const handleAddToCart = (product) => {
 		dispatch(addToCart({ product }));
 		dispatch(

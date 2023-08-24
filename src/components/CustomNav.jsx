@@ -1,8 +1,9 @@
 import { Navbar, Nav } from "react-bootstrap"; // Import Bootstrap components
 import { useSelector } from "react-redux";
-import "../css/Navbar.css";
 import { Link } from "react-router-dom";
+import "../css/Navbar.css";
 
+//BootStrap Navbar with Link elements instead of hrefs for better routing
 function CustomNavbar() {
 	const cartItems = useSelector((state) => state.cart);
 	return (

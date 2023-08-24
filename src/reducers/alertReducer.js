@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+//Handles two states for the alerts, show / hide
 const alertSlice = createSlice({
 	name: "alert",
 	initialState: {

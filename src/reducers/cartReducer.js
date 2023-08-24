@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+//if local storage present then initial state set to that else []
 const cartData = () => {
 	const localCart = localStorage.getItem("cart");
 	if (localCart) {
@@ -10,37 +11,31 @@ const cartData = () => {
 	}
 };
 
+//Handles add to cart and remove from cart - duplicates not allowed
 const cartSlice = createSlice({
 	name: "cart",
 	initialState: cartData(),
 	reducers: {
 		addToCart: (state, action) => {
 			const { product } = action.payload;
-			const localCart = JSON.parse(localStorage.getItem("cart"));
 
-			const existsInLocal = localCart.find((item) => item.id === product.id);
-			if (!existsInLocal) {
-				localStorage.setItem("cart", JSON.stringify([...localCart, product]));
-			}
-
-			const existingProduct = state.find((item) => item.id === product.id);
+			const existingProduct = state.find((itemId) => itemId === product.id);
 			if (!existingProduct) {
-				return [...state, product];
+				localStorage.setItem("cart", JSON.stringify([...state, product.id]));
+				return [...state, product.id];
 			}
 			return state;
 		},
-		setCart: (state, action) => {
-			const cartData = action.payload;
-			return [...cartData];
-		},
 		removeFromCart: (state, action) => {
 			const productIdToRemove = action.payload;
-			const updatedCart = state.filter((item) => item.id !== productIdToRemove);
+			const updatedCart = state.filter(
+				(itemId) => itemId !== productIdToRemove
+			);
 			localStorage.setItem("cart", JSON.stringify(updatedCart));
-			return state.filter((item) => item.id !== productIdToRemove);
+			return [...updatedCart];
 		},
 	},
 });
 
-export const { addToCart, setCart, removeFromCart } = cartSlice.actions;
+export const { addToCart, removeFromCart } = cartSlice.actions;
 export default cartSlice.reducer;

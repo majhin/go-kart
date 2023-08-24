@@ -9,12 +9,11 @@ function ProductDetail() {
 	const { productId } = useParams();
 	const dispatch = useDispatch();
 
-	console.log(allProducts);
-
 	const product = allProducts.find(
 		(item) => item.id === parseInt(productId, 10)
 	);
 
+	//handler to add product to cart and show corresponding alert
 	const handleAddToCart = (product) => {
 		dispatch(addToCart({ product }));
 		dispatch(

@@ -5,6 +5,7 @@ import { showAlert } from "../reducers/alertReducer";
 import { addProduct } from "../reducers/productReducer";
 
 function CreateProduct() {
+	//functional state to get a new product
 	const [newProduct, setNewProduct] = useState({
 		name: "",
 		description: "",
@@ -14,11 +15,12 @@ function CreateProduct() {
 
 	const dispatch = useDispatch();
 
+	//Standard handler for input change
 	const handleInputChange = (e) => {
 		const { name, value } = e.target;
 		setNewProduct({ ...newProduct, [name]: value });
 	};
-
+	//Standard handler for for Submit - makes a dummy API request and shows the corresponding Alerts
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 
@@ -27,16 +29,14 @@ function CreateProduct() {
 				"https://my-json-server.typicode.com/majhin/go-kart/products",
 				newProduct
 			);
-			const existingProducts =
-				JSON.parse(localStorage.getItem("products")) || [];
-			response.data.id = 21 + existingProducts.length + 1;
-			console.log(response.data);
+			const existingProducts = JSON.parse(localStorage.getItem("products"));
+			response.data.id = 21 + existingProducts.length + 1; //since server returns ID 22 always, !important increment!
 			const updatedProducts = [...existingProducts, response.data];
 			localStorage.setItem("products", JSON.stringify(updatedProducts));
-			dispatch(addProduct(newProduct)); // Add the new product to the Redux store
+			dispatch(addProduct(response.data)); // Add the new product to the Redux store
 			dispatch(
 				showAlert({
-					type: "Success", // 'Success', 'Error', 'Warning', etc.
+					type: "Success",
 					message: "Product Added Successfully",
 				})
 			);

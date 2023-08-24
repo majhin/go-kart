@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+//Lord Homepage - the one who cannot be named
 function Homepage() {
 	return (
 		<>

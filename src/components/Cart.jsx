@@ -1,13 +1,31 @@
 import { useSelector, useDispatch } from "react-redux";
 
+import { showAlert } from "../reducers/alertReducer";
 import { removeFromCart } from "../reducers/cartReducer";
 
 const Cart = () => {
 	const dispatch = useDispatch();
-	const cartItems = useSelector((state) => state.cart);
+	const allProducts = useSelector((state) => state.products.data);
+	const allCartItemIDs = useSelector((state) => state.cart);
 
+	//function to populate cartItems since cart only stores product IDs
+	function populateCartItems(allCartItemIDs, allProducts) {
+		const cartItems = allProducts.filter((product) =>
+			allCartItemIDs.includes(product.id)
+		);
+		return cartItems;
+	}
+	const cartItems = populateCartItems(allCartItemIDs, allProducts);
+
+	//Removes Item from cart and shows the corresponding Alert
 	const handleRemoveFromCart = (productId) => {
 		dispatch(removeFromCart(productId));
+		dispatch(
+			showAlert({
+				type: "Success",
+				message: "Product Removed from Cart",
+			})
+		);
 	};
 
 	return (
